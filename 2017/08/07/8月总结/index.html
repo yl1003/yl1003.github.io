@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近是加班比较严重的一段时间，六月、七月还有这个八月。保底每周是三天，期间有段时间封闭开发，每周加班时间多达5天。实在是没什么精力再写点什么，不过这段时间的密集加班，主要是搞了个分析的项目，主要工作就是做前端demo的实现，框架的主题是vue+element，我主要是负责vue公共组件的编写和element组件的样式封">
+<meta property="og:type" content="article">
+<meta property="og:title" content="8月总结">
+<meta property="og:url" content="https://yl1003.github.io/2017/08/07/8月总结/index.html">
+<meta property="og:site_name" content="code_free">
+<meta property="og:description" content="最近是加班比较严重的一段时间，六月、七月还有这个八月。保底每周是三天，期间有段时间封闭开发，每周加班时间多达5天。实在是没什么精力再写点什么，不过这段时间的密集加班，主要是搞了个分析的项目，主要工作就是做前端demo的实现，框架的主题是vue+element，我主要是负责vue公共组件的编写和element组件的样式封装。关于前端的学习终于不只是停留在个人学习阶段了，算是在项目上有了应用。 知识总">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-30T08:53:30.956Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="8月总结">
+<meta name="twitter:description" content="最近是加班比较严重的一段时间，六月、七月还有这个八月。保底每周是三天，期间有段时间封闭开发，每周加班时间多达5天。实在是没什么精力再写点什么，不过这段时间的密集加班，主要是搞了个分析的项目，主要工作就是做前端demo的实现，框架的主题是vue+element，我主要是负责vue公共组件的编写和element组件的样式封装。关于前端的学习终于不只是停留在个人学习阶段了，算是在项目上有了应用。 知识总">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://yl1003.github.io/2017/08/07/8月总结/"/>
+
+
+
+
+
+  <title>8月总结 | code_free</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code_free</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yl1003.github.io/2017/08/07/8月总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code_free">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code_free">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">8月总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T15:38:23+08:00">
+                2017-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近是加班比较严重的一段时间，六月、七月还有这个八月。保底每周是三天，期间有段时间封闭开发，每周加班时间多达5天。实在是没什么精力再写点什么，不过这段时间的密集加班，主要是搞了个分析的项目，主要工作就是做前端demo的实现，框架的主题是vue+element，我主要是负责vue公共组件的编写和element组件的样式封装。关于前端的学习终于不只是停留在个人学习阶段了，算是在项目上有了应用。</p>
+<h2 id="知识总结："><a href="#知识总结：" class="headerlink" title="知识总结："></a>知识总结：</h2><h3 id="vue核心"><a href="#vue核心" class="headerlink" title="vue核心"></a>vue核心</h3><p>各种指令、传参都有所了解，个人实现了几个公共组件，box、导航定位等<br>目前可以支撑正常的开发</p>
+<h3 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h3><p>应用比较浅，就实现了导航的选中状态</p>
+<h3 id="vue-route"><a href="#vue-route" class="headerlink" title="vue route"></a>vue route</h3><p>简单实用吧，这块难度也不大。懒加载的功能需要后续再研究下</p>
+<h3 id="element"><a href="#element" class="headerlink" title="element"></a>element</h3><p>用的不多，主要是改造ui组件的样式了</p>
+<h3 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h3><p>样式主要是sass，本来css水平不咋地，不过最近搞了不少样式，感觉提升不少，后续有空写几篇自己学到的，例如定位之类</p>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><h3 id="js语言"><a href="#js语言" class="headerlink" title="js语言"></a>js语言</h3><p>感觉对于js的掌握还是不足，虽然一般的业务使用上都能写，但是碰到问题时想看下人家源码实现的时候，还是很明显能感觉到自己的水平不行的。后期应该掌握下js，目前就是ES6或者TypeScript吧</p>
+<h3 id="方法论"><a href="#方法论" class="headerlink" title="方法论"></a>方法论</h3><p>工作中碰到问题还是多点耐心，对自己多点信心。其实这个分析项目因为用的都是新技术、刚加入基本处于空白的情况。好多东西觉得自己不会弄，不过最终还是都做出来了，其实并不是这些东西有多难，只是跟原来的工作内容差距多点。<br>感慨一点，<a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN</a>好样的!</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/12/统计学知识/" rel="next" title="统计学知识">
+                <i class="fa fa-chevron-left"></i> 统计学知识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/03/Vue-入门知识/" rel="prev" title="Vue 入门知识">
+                Vue 入门知识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">code_free</p>
+              <p class="site-description motion-element" itemprop="description">just a coder!</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/yl1003" target="_blank" title="Github">
+                    
+                      <i class="fa fa-fw fa-globe"></i>Github</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/_freedom_yl" target="_blank" title="Twitter">
+                    
+                      <i class="fa fa-fw fa-globe"></i>Twitter</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识总结："><span class="nav-number">1.</span> <span class="nav-text">知识总结：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vue核心"><span class="nav-number">1.1.</span> <span class="nav-text">vue核心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vuex"><span class="nav-number">1.2.</span> <span class="nav-text">vuex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-route"><span class="nav-number">1.3.</span> <span class="nav-text">vue route</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#element"><span class="nav-number">1.4.</span> <span class="nav-text">element</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sass"><span class="nav-number">1.5.</span> <span class="nav-text">sass</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不足"><span class="nav-number">2.</span> <span class="nav-text">不足</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#js语言"><span class="nav-number">2.1.</span> <span class="nav-text">js语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法论"><span class="nav-number">2.2.</span> <span class="nav-text">方法论</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code_free</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
